@@ -1,0 +1,84 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ecf0f1;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+thead {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #ecf0f1;
+}
+
+tfoot tr {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkout-btn {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+}
+
+/* Add more styles for an aesthetic look as needed */

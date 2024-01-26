@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Warna latar belakang yang lebih lembut */
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    transition: 0.5s; /* Efek transisi untuk membuat perubahan lebih halus */
+}
+
+.sidenav a {
+    padding: 15px 8px 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; /* Efek transisi untuk hover yang lebih halus */
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #333; /* Warna latar belakang saat dihover */
+}
+
+.content {
+    margin-left: 250px;
+    padding: 16px;
+    transition: margin-left 0.5s; /* Efek transisi untuk konten saat membuka/closing sidenav */
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd; /* Garis bawah pada judul untuk tampilan yang lebih menarik */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Efek transisi untuk konten saat membuka/closing sidenav */
+.sidenav-open .content {
+    margin-left: 0;
+}

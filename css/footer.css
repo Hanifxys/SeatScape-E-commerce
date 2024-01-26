@@ -1,0 +1,85 @@
+footer {
+    background: brown;
+    /* padding-left: 100px; */
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    padding: 2rem;
+    gap: 10rem;
+    align-items: center;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+  }
+  footer .logo-container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  footer .logo-container p {
+    max-width: 400px;
+    line-height: 25px;
+  }
+  
+  footer .about-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+    /* padding-right: 100px; */
+  }
+  
+  footer .about-company .container {
+    margin-top: 20px;
+  }
+  
+  
+  .about-company .container h1 {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  
+  .about-company .container p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .about-company .social-media a {
+    margin: 10px;
+    font-size: 25px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    footer .logo-container {
+      padding: 0;
+    }
+    footer .logo-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    footer .about-company {
+      margin-top: 20px;
+    }
+    footer .about-company .container {
+      flex-direction: column;
+      margin-right: 0;
+      margin: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    footer .about-company {
+      gap: 1rem;
+    }
+    footer .about-company .container {
+      margin-top: 0;
+    }
+  }

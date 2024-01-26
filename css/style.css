@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    /* margin: auto; */
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.title{
+    /* font-size: xx-large; */
+    padding: 20px 0;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    /* font-weight: 500; */
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+/* testimoni */
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+    height: 100%;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: brown;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+
+/* // ipad */
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .detail{
+        grid-template-columns:  40% 1fr;
+    }
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .detail{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .detail .image img{
+        width: unset;
+        height: 40vh;
+    } 
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+
+    }
+    .detail .buttons button{
+        font-size: small;
+    }
+    .detail .buttons{
+        justify-content: center;
+    }
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
